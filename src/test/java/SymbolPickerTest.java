@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,6 +8,7 @@ class SymbolPickerTest {
     private final SymbolPicker symbolPicker = new SymbolPicker();
 
     @Test
+    @DisplayName("Привет всем")
     public void pick_okData_success() {
         char symbol = symbolPicker.pick("Даниил", 0);
 
